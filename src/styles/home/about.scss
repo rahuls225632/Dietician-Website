@@ -1,0 +1,30 @@
+.test {
+  width: 10.6rem;
+  height: 10.6rem;
+  color: #433833;
+  background-color: #f0eae5;
+  border-color: #12dd8f !important;
+  border-radius: 50%;
+  border: 3px solid;
+  display: block;
+  line-height: 11rem;
+  font-size: 4.6667em;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.bg-contactUs {
+  background-image: url('../../assests/images/about/contactUs.jpg');
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-Image1 {
+  background-image: url('../../assests/images/about/bgImage1.jpg');
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

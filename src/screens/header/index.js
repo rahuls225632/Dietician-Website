@@ -1,18 +1,13 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assests/images/logo.png';
-import GirlWithOrange from '../../assests/images/girlWithOrange.jpg';
-import Vegitable from '../../assests/images/vegitable.jpg';
-
 const Header = () => {
   const navigate = useNavigate();
   const apiLink = 'https://catfact.ninja/fact';
+ 
 
   useEffect(() => {
     async function fetchAPI() {
@@ -22,10 +17,10 @@ const Header = () => {
   }, []);
   return (
     <>
-      <Navbar bg="light" expand="lg" className='fixed-top me-5'>
+      <Navbar bg="light" expand="lg" className="fixed-top">
         <Container fluid>
           <Navbar.Brand href="#">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href='/ui'>
               <img src={Logo} alt="..." height="70" />
             </a>
           </Navbar.Brand>
@@ -37,24 +32,27 @@ const Header = () => {
               navbarScroll
             >
               <Nav.Link
-              className="me-5"
+                className="me-5"
                 onClick={() => {
                   navigate('');
                 }}
               >
                 Home
               </Nav.Link>
-              <Nav.Link className="me-5"
+              <Nav.Link 
+                className="me-5"
                 onClick={() => {
                   navigate('/about');
                 }}
               >
                 About me
               </Nav.Link>
-              <Nav.Link href="#action134">Programms</Nav.Link>
-              <Nav.Link href="#action1">Recipes</Nav.Link>
-              <Nav.Link href="#action1">Features</Nav.Link>
-              <Nav.Link href="#action1">Video</Nav.Link>
+              <Nav.Link  onClick={() => {
+                  navigate('/programms');
+                }} className="me-5">
+                Programms
+              </Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

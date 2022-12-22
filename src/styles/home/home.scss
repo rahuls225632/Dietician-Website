@@ -4,3 +4,74 @@
     padding-left:30px;
     padding-right:30px;
 }
+
+
+.bg-image1 {
+    background-image: url("../../assests/images/bgImage1.1.jpg");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image2 {
+    background-image: url("../../assests/images/bgImage3.jpg");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image4 {
+    background-image: url("../../assests/images/bgImage4.2.jpg");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3em;
+   
+}
+.bg-image6 {
+    background-image: url("../../assests/images/bgImage6.jpg");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.bg-image5 {
+    background-image: url("../../assests/images/bgImage5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    max-height: 20em;
+    margin: 5rem;
+    img{
+        // justify-content: space-between;
+        // padding: 1em;
+        cursor: pointer;
+        object-fit: cover;
+    }
+}
+
+.leaf-image {
+    ::before {
+        content: '🎮 ';
+        // content: '\e956';
+    font-family: "fontello";
+    font-size: 1.55em;
+    display: block;
+    line-height: 1.05em;
+    font-weight: 400;
+    }
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.white-color {
+    color: white;
+    text-align: center;
+}
+
